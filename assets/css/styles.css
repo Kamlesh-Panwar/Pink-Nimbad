@@ -124,8 +124,8 @@ body {
 
 .section {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .section.colored {
@@ -187,14 +187,14 @@ body {
 
 .center-text p {
   font-size: 15px;
-  color: #777;
+  color: #282727;
   margin-bottom: 30px;
 }
 
 .left-text {
   font-weight: 400;
   font-size: 16px;
-  color: #777;
+  color: #282727;
   line-height: 28px;
   letter-spacing: 1px;
 }
@@ -205,6 +205,7 @@ body {
 
 .left-text p {
   margin-bottom: 30px;
+  color: #282727;
 }
 
 .left-text p.dark {
@@ -807,7 +808,7 @@ features
 .features-small-item p {
   font-weight: 400;
   font-size: 13px;
-  color: #777;
+  color: #282727;
   letter-spacing: 0.5px;
   line-height: 25px;
   position: relative;
@@ -835,6 +836,80 @@ features
   }
 }
 
+.rounded{
+  padding-top: 50px;
+}
+
+
+.differentiators {
+  background: linear-gradient(135deg, #00c853, #7ed957);
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.differentiators h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  background: #ffffff;
+  color: #333;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h4 {
+  color: #00a859;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #282727;
+}
+
+.cards-container {
+  display: flex;
+  gap: 30px;   /* yahan se distance control hoga */
+}
+
+#row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.dev-icons{
+  padding-bottom: 45px;
+}
+
+.dev-icon{
+padding-bottom: 32px;
+}
+
 /* 
 ---------------------------------------------
 parallax & home seperator
@@ -857,7 +932,7 @@ parallax & home seperator
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/work-process-bg-new.png);
+  background-image: url(../images/banner-bg-new.png);
   z-index: 2;
   top: -20%;
   left: -20%;
@@ -1104,6 +1179,35 @@ parallax & home seperator
     margin-top: 0px;
   }
 }
+/* 
+---------------------------------------------
+Project
+--------------------------------------------- 
+*/
+.project-item {
+    height: 420px;
+    padding: -1px 25px;
+    max-height: 170px;      /* control visible text height */
+    overflow-y: auto;      /* scroll only paragraph */
+    padding-right: 10px;
+}
+
+/* Nice scrollbar */
+.project-item p::-webkit-scrollbar {
+    width: 2px;
+    background: #6fdc3f;
+}
+
+.project-item p::-webkit-scrollbar-thumb {
+    background: #6fdc3f;
+    border-radius: 10px;
+}
+
+.project-item p::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
 
 /* 
 ---------------------------------------------
@@ -1181,14 +1285,17 @@ team
 
 .team-item .team-content p {
   margin-top: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 40px;
   margin-bottom: 25px;
   font-weight: 400;
   font-size: 15px;
-  color: #777;
+  color: #282727;
   letter-spacing: 0.6px;
   line-height: 26px;
+}
+
+.team-content{
+  height: 300px;
 }
 
 /* 
@@ -1389,9 +1496,6 @@ contact
 --------------------------------------------- 
 */
 
-#contact-us {
-  padding: 160px 0px;
-}
 
 #contact-us h5 {
   font-weight: 500;
@@ -1404,18 +1508,23 @@ contact
 .contact-text {
   font-weight: 400;
   font-size: 14px;
-  color: #6F8BA4;
+  color: #595b5d;
   letter-spacing: 0.6px;
   line-height: 26px;
 }
 
 .contact-text p {
+  font-family:'Inter', 'Roboto', 'Open Sans', sans-serif;
   margin-bottom: 28px;
+}
+
+.contact-text h6 {
+ color: #0e0e0e;
 }
 
 .contact-form input,
 .contact-form textarea {
-  color: #777;
+  color: #282727;
   font-size: 14px;
   border: 1px solid #eee;
   width: 100%;
@@ -1595,4 +1704,7 @@ preloader
   text-align: center;
 }
 
-
+.mail{
+  align-items: center;
+  color: white;
+}
