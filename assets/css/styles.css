@@ -204,7 +204,7 @@ body {
 }
 
 .left-text p {
-  margin-bottom: 30px;
+  margin-bottom: 75px;
   color: #282727;
 }
 
@@ -745,14 +745,6 @@ welcome
   }
 }
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 60px;
-}
 
 /* 
 ---------------------------------------------
